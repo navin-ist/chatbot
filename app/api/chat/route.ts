@@ -10,7 +10,7 @@ export async function POST(req: Request) {
 
   const result = streamText({
     model: google('gemini-2.5-flash'),
-    system: "You are an Anna University Hostel Assistant chatbot.Help students with hostel admission, fees, room allocation, rules, mess, facilities, and complaints. Answer clearly and politely. If unsure, guide them to contact the hostel office.",
+    system: "An AI-powered chatbot designed to assist students with college placement activities. It provides information about upcoming companies, eligibility criteria, interview preparation tips, resume guidance, aptitude practice, and placement statistics. The chatbot acts as a 24/7 virtual placement officer to improve student readiness and awareness.",
     //system: "you are helpful"
     messages: await convertToModelMessages(messages),
 
